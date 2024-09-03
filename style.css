@@ -1,0 +1,176 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Body contém todo o conteúdo visível da página. */
+body {
+    font-family: 'Chakra Petch', sans-serif; /* Define a fonte que será utilizada para o texto dentro do elemento */
+    background-color: #f2f2f2; /* Define a cor de fundo do elemento */
+    display: flex; /* display: Altera o modelo de exibição do elemento */
+    /*flex: Define o elemento como um container flexível, permitindo o uso de flexbox para criar layouts responsivos e flexíveis.*/
+    flex-direction: column; /* flex-direction: Define a direção principal dos itens flexíveis dentro do container.*/
+    /*column: Os itens serão posicionados verticalmente, um abaixo do outro.*/
+    align-items: center; /* align-items: Alinha os itens flexíveis na direção transversal (neste caso, horizontalmente). */
+    /*center: Centraliza os itens horizontalmente dentro do container.*/
+    justify-content: center; /* justify-content: Alinha os itens flexíveis na direção principal (neste caso, verticalmente).*/
+    /*center: Centraliza os itens verticalmente dentro do container.*/
+    height: 100vh; /* height: Define a altura do elemento.*/
+    /*100vh: A altura será igual a 100% da altura da viewport (janela do navegador).*/
+    margin: 0; /* margin: Remove qualquer margem externa do elemento. */
+    padding: 0; /* padding: Remove qualquer espaço interno do elemento. */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 2.5rem; /* Tamanho da fonte - O rem é uma unidade relativa ao tamanho da fonte raiz (geralmente o corpo do texto). 2.5rem significa que o texto será 2.5 vezes maior que o tamanho da fonte base. */
+    color: #222831; /* Define a cor do texto dentro do elemento */
+    text-align: center; /* Centraliza o texto horizontalmente dentro do elemento */
+    letter-spacing: 0.4rem; /* letter-spacing: Define o espaço entre cada letra do texto. */
+}
+
+/* Estiliza as seções da página - O section é usado para definir uma seção genérica de conteúdo. */
+section {
+    display: flex; /* Define o elemento section como um container flexível, permitindo o uso do layout flexbox. Isso significa que os elementos filhos desse container podem ser posicionados de forma flexível e responsiva. */
+    flex-direction: column; /*: Define a direção principal dos itens filhos dentro do container como sendo vertical. Isso significa que os elementos filhos serão empilhados um em cima do outro. */
+    align-items: center; /* Alinha os itens filhos horizontalmente no centro do container. Isso garante que todos os elementos filhos estarão centralizados na linha*/
+    margin-bottom: 3rem; /*Adiciona uma margem inferior de 3rem (equivalente a 3 vezes o tamanho da fonte base) ao elemento section. Isso cria um espaço entre cada seção, melhorando a legibilidade e a organização da página.*/
+}
+
+section input {
+    width: 30rem; /*Define a largura do elemento <input> para 30rem (equivalente a 30 vezes o tamanho da fonte base). Isso garante que os campos de entrada tenham um tamanho consistente em todas as seções.*/
+    border: none; /* Remove a borda padrão do elemento <input>, dando um aspecto mais clean e moderno. */
+    padding: 1rem; /* Adiciona um espaço interno de 1rem em todas as direções (cima, baixo, esquerda e direita) do elemento <input>. Isso cria um espaço entre o texto e a borda do campo, melhorando a usabilidade. */
+    border-radius: 1.5rem; /* Arredonda as bordas do elemento <input> em 1.5rem, dando um aspecto mais suave e arredondado. */
+    margin-bottom: 1rem; /* Adiciona uma margem inferior de 1rem ao elemento <input>. Isso cria um espaço entre os campos de entrada quando eles estão empilhados um abaixo do outro, melhorando a legibilidade. */
+    color: #45474b; /* Define a cor do texto dentro do elemento <input> para um tom de cinza escuro. */
+    font-size: 1rem; /* Define o tamanho da fonte do texto dentro do elemento <input> para o tamanho da fonte base.
+    */
+    box-sizing: border-box; /* az com que a largura e a altura especificadas para o elemento incluam o padding e a borda. Isso significa que ao definir a largura como 30rem, os 1rem de padding estão incluídos nessa medida, evitando problemas de layout.*/
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Define o espaço interno do botão, ou seja, a área entre o texto do botão e a borda.*/
+    border: none; /* Remove a borda padrão do botão, dando um aspecto mais clean e moderno.*/
+    border-radius: 1.5rem; /* Arredonda as bordas do botão em 1.5rem, criando um visual mais suave e agradável.*/
+    background-color: #30475e; /* Cor de fundo do botão */
+    color: #f5f7f8; /* Define a cor do texto do botão para um tom de cinza claro, garantindo bom contraste com a cor de fundo. */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/*Esta parte seleciona especificamente os botões que estão dentro de uma seção e que estão sendo "passados o mouse por cima" (hover). Ou seja, as regras dentro das chaves serão aplicadas apenas quando o usuário posicionar o cursor do mouse sobre o botão. */
+section button:hover {
+    background-color: #30475e; /* Quando o mouse passar sobre o botão, a cor de fundo será alterada para um tom de azul um pouco mais escuro. Isso cria um feedback visual para o usuário, indicando que o botão está pronto para ser clicado.*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão. As propriedades dentro dos parênteses definem a intensidade e a posição da sombra: */
+    /*0 4px 8px: Indica que a sombra terá um deslocamento horizontal de 0 pixels, um deslocamento vertical de 4 pixels e um desfoque de 8 pixels.
+    rgba(0, 0, 0, 0.2): Define a cor da sombra como preto (0,0,0) com uma opacidade de 20% (0.2). Isso cria uma sombra suave e discreta.*/
+}
+
+/* Seleciona todos os elementos que possuem a classe "resultados-pesquisa". Geralmente, essa classe é aplicada a um elemento <div> ou outro elemento de bloco para conter os resultados da pesquisa. */
+.resultados-pesquisa {
+    width: 60rem; /*  Define a largura máxima da caixa de resultados em 60rem. Isso significa que a caixa não ultrapassará essa largura, mesmo se o conteúdo interno for maior. */
+    height: 46vh; /* Define a altura máxima da caixa de resultados em 46% da altura da viewport (janela do navegador). Isso permite que a caixa se ajuste a diferentes tamanhos de tela. */
+    overflow-y: auto; /*  Se o conteúdo da caixa de resultados exceder a altura definida, barras de rolagem verticais serão adicionadas automaticamente, permitindo que o usuário role para ver o conteúdo completo. */
+    margin-top: 1rem; /* Adiciona um espaço de 1rem acima da caixa de resultados, criando um espaçamento entre a caixa e o elemento que a precede. */
+    padding: 1rem; /* Adiciona um espaço interno de 1rem em todas as direções (cima, baixo, esquerda e direita) da caixa de resultados, criando uma área de respiro entre o conteúdo e a borda da caixa. */
+    border-radius: 0.6rem; /* Arredonda as bordas da caixa de resultados em 0.6rem, dando um aspecto mais suave e moderno. */
+}
+
+/*Seleciona todos os elementos que possuem a classe "item-resultado". Provavelmente, cada resultado da pesquisa está dentro de um elemento com essa classe. */
+.item-resultado {
+    background: #ffffff; /* Define a cor de fundo dos itens como branco (#FFFFFF), proporcionando um contraste claro com a cor do texto e outros elementos. */
+    border-radius: 0.6rem; /* Arredonda as bordas dos itens em 0.6rem, dando um aspecto mais suave e moderno. */
+    padding: 1rem; /* Adiciona um espaço interno de 1rem em todas as direções (cima, baixo, esquerda e direita) do item, criando um espaço entre o conteúdo do item e a borda. */
+    margin-bottom: 1rem; /* Adiciona um espaço de 1rem abaixo de cada item, criando uma separação visual entre os resultados da pesquisa.
+    */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* box-shadow: Adiciona uma sombra leve aos itens, dando a impressão de que eles estão ligeiramente elevados da página. */
+}
+
+/* Essa parte do seletor CSS indica que as regras a seguir se aplicam a todos os elementos <h2> que estão dentro de um elemento com a classe item-resultado. Isso significa que todos os títulos dos seus itens de resultado terão o mesmo estilo. */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Define o tamanho da fonte dos títulos para 1.5rem (equivalente a 1.5 vezes o tamanho da fonte base). Isso faz com que os títulos se destaquem em relação ao restante do texto do item. */
+    color: #222831; /* Define a cor do texto dos títulos para um tom de cinza escuro (#222831). Essa cor geralmente é usada para títulos e cabeçalhos, pois cria um bom contraste com o fundo e o texto normal. */
+}
+
+/* Essa parte do seletor CSS indica que as regras a seguir se aplicam a todos os elementos <a> (links) que estão dentro de um elemento com a classe item-resultado. Isso significa que todos os links dentro dos seus itens de resultado terão o mesmo estilo. */
+.item-resultado a {
+    text-decoration: none; /*Remove o sublinhado padrão que normalmente é aplicado aos links. Isso dá um aspecto mais limpo e personalizado aos seus links.*/
+    color: #30475e; /* Define a cor do texto dos links para um tom de azul escuro (#30475E). Essa cor geralmente é usada para links, pois indica que o elemento é clicável. */
+}
+
+/* .item-resultado a: Assim como nos exemplos anteriores, essa parte seleciona todos os elementos <a> (links) que estão dentro de um elemento com a classe item-resultado.
+:hover: Essa pseudo-classe é o ponto chave aqui. Ela indica que as regras dentro das chaves serão aplicadas somente quando o mouse estiver sobre o elemento. Em outras palavras, quando o usuário passar o mouse por cima do link, o estilo definido será aplicado.
+ */
+.item-resultado a:hover {
+    text-decoration: underline; /*  Essa propriedade adiciona um sublinhado abaixo do texto do link. É uma forma tradicional de indicar que um elemento é clicável.*/
+}
+
+/* : Essa parte do seletor CSS indica que as regras a seguir se aplicam a todos os elementos com a classe descricao-meta. Geralmente, essa classe é aplicada a um elemento <p> ou outro elemento de bloco que contém a descrição meta de cada resultado da pesquisa. */
+.descricao-meta {
+    color: #45474b; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Seleciona todos os elementos HTML com a tag <footer>. Essa tag é especificamente usada para definir a seção de rodapé de uma página. */
+footer {
+    background-color: #f5f7f8; /* Cor de fundo do rodapé */
+    color: #45474b; /* Cor do texto */
+    text-align: center; /* Alinha todo o texto dentro do rodapé ao centro da página. Isso cria um layout mais balanceado. */
+    padding: 0; /* Remove qualquer espaçamento interno padrão do rodapé. Isso permite um controle mais preciso sobre o espaçamento ao redor do conteúdo do rodapé */
+    width: 100%; /* Define a largura do rodapé como 100% da largura da página. Isso garante que o rodapé ocupe toda a largura disponível. */
+    position: absolute; /* Posiciona o rodapé de forma absoluta em relação aos outros elementos da página. Isso significa que ele não será afetado pelo fluxo normal do conteúdo. */
+    bottom: 0; /* Alinha o rodapé à parte inferior da página. Combinado com position: absolute;, isso garante que o rodapé sempre fique na parte inferior, independentemente do conteúdo da página. */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+/*Essa diretiva indica que as regras dentro das chaves se aplicam apenas quando a tela atende a uma determinada condição.
+(max-width: 768px): Essa condição especifica que as regras dentro das chaves se aplicam apenas quando a largura máxima da tela for de 768 pixels ou menos. Isso geralmente corresponde a tablets e smartphones.*/
+@media (max-width: 768px) {
+    h1 {
+        /*Altera o estilo dos elementos <h1> (títulos de nível 1)      quando a tela estiver em um tamanho menor que 768px.*/
+        font-size: 2rem; /* Diminui o tamanho da fonte dos títulos para 2rem, tornando-os mais adequados para telas menores. */
+        letter-spacing: 0.2rem; /* Aumenta ligeiramente o espaçamento entre as letras dos títulos, melhorando a legibilidade em telas menores. */
+    }
+    section input {
+        width: 25rem; /* Largura dos inputs em telas menores */
+        padding: 0.8rem; /* Espaçamento interno em telas menores */
+    }
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados em telas menores */
+        height: 40vh; /* Altura da caixa de resultados em telas menores */
+    }
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+/* @media: Assim como no exemplo anterior, essa diretiva indica que as regras dentro das chaves se aplicam apenas quando a tela atende a uma determinada condição.
+(max-width: 480px): Essa condição específica que as regras dentro das chaves se aplicam apenas quando a largura máxima da tela for de 480 pixels ou menos. Isso abrange a maioria dos smartphones em modo retrato. */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
