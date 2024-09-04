@@ -4,7 +4,7 @@
 /* Body contém todo o conteúdo visível da página. */
 body {
     font-family: 'Chakra Petch', sans-serif; /* Define a fonte que será utilizada para o texto dentro do elemento */
-    background-color: #f2f2f2; /* Define a cor de fundo do elemento */
+    background-color: #dddddd; /* Define a cor de fundo do elemento */
     display: flex; /* display: Altera o modelo de exibição do elemento */
     /*flex: Define o elemento como um container flexível, permitindo o uso de flexbox para criar layouts responsivos e flexíveis.*/
     flex-direction: column; /* flex-direction: Define a direção principal dos itens flexíveis dentro do container.*/
