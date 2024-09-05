@@ -28,11 +28,11 @@ HTML5 -->
                 <!-- <input> Essa tag define um campo de entrada para o usuário.-->
                 <!-- type="text" Especifica que o tipo de dado que será inserido no campo é texto.-->
                 <!-- placeholder="Digite o nome do atleta": Adiciona um texto dentro do campo que serve como dica para o usuário, desaparecendo quando ele começa a digitar.-->
-                <button>Pesquisar</button>
+                <button onclick="pesquisar()">Pesquisar</button>
             </section>
             <!--Sessão para exibir os resultados da pesquisa-->
-            <section class="resultados-pesquisa">
-                <div class="item-resultado">
+            <section class="resultados-pesquisa" id="resultados-pesquisa">
+                <!--  <div class="item-resultado">
                     <h2><a href="#" target="_blank"> Rebeca Andrade</a></h2>
                     <p class="descricao-meta">
                         Rebeca Andrade é uma ginasta artística brasileira que
@@ -41,8 +41,8 @@ HTML5 -->
                         medalhista da história do Brasil nos Jogos Olímpicos,
                         acumulando diversas medalhas de ouro, prata e bronze.
                     </p>
-                    <!--É um atributo HTML utilizado em elementos de âncora (<a>) para especificar onde o documento vinculado deve ser aberto.-->
-                    <!--_blank:   É o valor atribuído ao atributo target. Ele indica que o documento vinculado deve ser aberto em uma nova aba ou janela do navegador.-->
+                    É um atributo HTML utilizado em elementos de âncora (<a>) para especificar onde o documento vinculado deve ser aberto.-->
+                <!--_blank:   É o valor atribuído ao atributo target. Ele indica que o documento vinculado deve ser aberto em uma nova aba ou janela do navegador.
                     <a
                         href="https://pt.wikipedia.org/wiki/Rebeca_Andrade"
                         target="_blank"
@@ -75,7 +75,7 @@ HTML5 -->
                         das principais atletas do judô brasileiro.
                     </p>
                     <a href="#" target="_blank">Mais Informações</a>
-                </div>
+                </div> -->
             </section>
         </main>
 
@@ -83,6 +83,7 @@ HTML5 -->
             <p>2024 - Atletas do Brasil. Todos os direitos reservados.</p>
             <p>Entre em contato pelo email: aline@atletas.com.br</p>
         </footer>
+        <script src="dados.js"></script>
         <script src="app.js"></script>
     </body>
 </html>
